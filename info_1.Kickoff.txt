@@ -15,8 +15,6 @@ meilenstein 2:
 
 
 
-
-
 ideen bzgl KI:
 
     - CoPilot oder andere KIs
