@@ -1,0 +1,36 @@
+ca 45miun
+
+meilensteil 1:
+
+    - bestimmtes Ziel
+    - Palnung <- Wichtig
+    - Entwicklung (sollte klar sein welche feature eingebaut werden)
+
+
+
+
+meilenstein 2:
+ 
+    - Entwicklung <- wichtig 
+
+
+
+
+
+ideen bzgl KI:
+
+    - CoPilot oder andere KIs
+    - Python
+
+    - mit der Ki arbeiten und schauen was raus kommt -> dieses dann bewerten 
+    - Kern soll die arbeit mit der Arbeit mit einem halbleihen bis hin zu einem code
+
+    - über stichworte module finden
+
+
+feature:
+
+    - Metadaten analyse oder/und Ausgabe 
+    - genre erkennung
+    - welches Audiofile? (.mp3; .wav; .flac; .wma; .ogg; .rm)
+    - 
