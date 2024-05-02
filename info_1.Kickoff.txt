@@ -1,0 +1,67 @@
+ca 45miun
+
+meilensteil 1:
+
+    - bestimmtes Ziel
+    - Palnung <- Wichtig
+    - Entwicklung (sollte klar sein welche feature eingebaut werden)
+
+
+
+
+meilenstein 2:
+ 
+    - Entwicklung <- wichtig 
+
+
+
+ideen bzgl KI:
+
+    - CoPilot oder andere KIs
+    - Python
+
+    - mit der Ki arbeiten und schauen was raus kommt -> dieses dann bewerten 
+    - Kern soll die arbeit mit der Arbeit mit einem halbleihen bis hin zu einem code
+
+    - über stichworte module finden
+
+
+feature:
+
+    - Metadaten analyse oder/und Ausgabe 
+    - genre erkennung
+    - welches Audiofile? (.mp3; .wav; .flac; .wma; .ogg; .rm)
+    - 
+
+    Notizen Niklas:
+
+    Analysetool in Python zur Musikanalyse mit KI
+
+Schnell anfangen mit KI
+
+Copilot benutzen
+Python-Programm
+
+Programm soll durch Prompts erstellt werden.
+
+Wie kann ich der KI sagen, mach mir ein Pythonprogramm welches die Musik analysiert
+
+Analysieren, ist es gesungen, ist es gesprochen
+
+Es muss kein fertiges Produktsein
+
+Nur das KI-Ergebniss zählt
+
+Dialog mit KI, welche Prompts benutzt werden, dokumentieren
+
+Strategie ausdenken wie man vorgeht
+
+8.Mai Planung abgeben | 13. Juni Entwicklung abgeben 
+
+2 Teile in finaler Abgabe
+
+1. Was ist der Output
+2. Lessons learned wie lief der Prozess ab.
+
+
+

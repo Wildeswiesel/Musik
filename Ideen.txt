@@ -1,0 +1,8 @@
+Hier bitte Ideen für Feature eintragen:
+
+
+    - Metadaten analyse oder/und Ausgabe 
+    - genre erkennung
+    - welches Audiofile? (.mp3; .wav; .flac; .wma; .ogg; .rm)
+    - nach rauschen suchen
+    -
