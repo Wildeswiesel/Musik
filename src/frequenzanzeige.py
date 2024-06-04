@@ -28,6 +28,6 @@ def analyze_audio(file_path):
     print(f"Tempo: {tempo} Schläge pro Minute")
 
 if __name__ == "__main__":
-    # Pfad zur Audiodatei - Ersetze diesen mit dem Pfad zu deiner Audiodatei
+    # Pfad zu
     audio_file_path = 'data/Zeit/Dicke Titten.mp3'
     analyze_audio(audio_file_path)
