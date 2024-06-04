@@ -29,5 +29,5 @@ def analyze_audio(file_path):
 
 if __name__ == "__main__":
     # Pfad zur Audiodatei - Ersetze diesen mit dem Pfad zu deiner Audiodatei
-    audio_file_path = 'data/Hey Brother.mp3'
+    audio_file_path = 'data/Zeit/Dicke Titten.mp3'
     analyze_audio(audio_file_path)
