@@ -21,23 +21,27 @@ def analyze_audio(file_path):
 
     # Initialize plot
     plt.figure(figsize=(14, 5))
-
-    # Plot the waveform
-    plt.subplot(2, 1, 1)
-    librosa.display.waveshow(y, sr=sr, alpha=0.5)
-    plt.title('Waveform')
-    plt.xlabel('Time (s)')
+    librosa.display.waveshow(y, sr=sr, alpha=0.8)
+    plt.title('Wellenform')
+    plt.xlabel('Zeit (s)')
     plt.ylabel('Amplitude')
 
-    # Overlay quiet, medium, and loud segments
-    time = np.arange(len(amplitude_envelope)) * hop_length / sr
-    for i, amp in enumerate(amplitude_envelope):
-        if amp < quiet_threshold:
-            plt.plot([time[i], time[i]], [-1, 1], color='red', linewidth=0.5)
-        elif amp > loud_threshold:
-            plt.plot([time[i], time[i]], [-1, 1], color='green', linewidth=0.5)
+    # Get time array for the waveform
+    time = np.linspace(0, len(y) / sr, len(y))
+
+    # Color the waveform based on amplitude envelope
+    for i in range(len(amplitude_envelope)):
+        start_sample = i * hop_length
+        end_sample = start_sample + hop_length
+        if end_sample > len(y):
+            end_sample = len(y)
+
+        if amplitude_envelope[i] < quiet_threshold:
+            plt.plot(time[start_sample:end_sample], y[start_sample:end_sample], color='green', linewidth=0.5)
+        elif amplitude_envelope[i] > loud_threshold:
+            plt.plot(time[start_sample:end_sample], y[start_sample:end_sample], color='red', linewidth=0.5)
         else:
-            plt.plot([time[i], time[i]], [-1, 1], color='purple', linewidth=0.5)
+            plt.plot(time[start_sample:end_sample], y[start_sample:end_sample], color='purple', linewidth=0.5)
 
     # Calculate and display audio metadata
     duration = librosa.get_duration(y=y, sr=sr)
@@ -45,16 +49,15 @@ def analyze_audio(file_path):
     avg_rms = np.mean(rms)
     max_rms = np.max(rms)
 
-    plt.subplot(2, 1, 2)
-    plt.axis('off')
-    metadata = f"""
+    # Display metadata
+    metadata_text = f"""
     Metadata:
     - Sample rate: {sr} Hz
     - Duration: {duration:.2f} seconds
     - Average RMS: {avg_rms:.2f}
     - Max RMS: {max_rms:.2f}
     """
-    plt.text(0.1, 0.5, metadata, fontsize=12)
+    plt.figtext(0.15, 0.02, metadata_text, fontsize=12)
 
     plt.tight_layout()
     plt.show()
